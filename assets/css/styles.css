@@ -182,6 +182,28 @@ body {
   gap: 0.8rem;
 }
 
+@media (max-width: 640px) {
+  .hero-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center; /* 可選：若你希望手機版整塊置中呈現 */
+  }
+
+  .hero h1 {
+    text-align: center;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -561,3 +583,4 @@ body {
     align-items: flex-start;
   }
 }
+
