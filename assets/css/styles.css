@@ -334,13 +334,21 @@ body {
   align-items: flex-start;
 }
 
+.advisor-layout img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 700px;
+}
+
 .advisor-photo {
   width: 100%;
-  max-width: 280px;
+  height: auto;
+  /* max-width: 280px;
   border-radius: 999px;
   border: 2px solid rgba(56, 189, 248, 0.4);
   box-shadow: var(--shadow-soft);
-  object-fit: cover;
+  object-fit: cover; */
 }
 
 /* Timeline */
@@ -583,4 +591,3 @@ body {
     align-items: flex-start;
   }
 }
-
