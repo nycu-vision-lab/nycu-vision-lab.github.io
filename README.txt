@@ -1,10 +1,6 @@
+### Directories structure
+
 vision-lab-site/
-│
-├─ index.html          ← Home (Vision Lab)
-├─ advisor.html        ← Advisor
-├─ members.html        ← Member
-├─ research.html       ← Research
-├─ courses.html        ← Course
 │
 ├─ assets/
 │  ├─ css/
@@ -16,3 +12,9 @@ vision-lab-site/
 │      ├─ advisor.jpg          ← 指導教授照片
 │      ├─ members/…            ← 成員頭像
 │      └─ research/…           ← 研究圖、示意圖
+│
+├─ index.html                  ← Home (Vision Lab)
+├─ advisor.html                ← Advisor
+├─ members.html                ← Member
+├─ research.html               ← Research
+└─ courses.html                ← Course
