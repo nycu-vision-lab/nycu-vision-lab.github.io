@@ -1,0 +1,229 @@
+[
+  {
+    "group": "recent",
+    "file": "lowshot_classification.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-131114.png",
+        "alt": "Low-shot classification with DINOv2"
+      }
+    ]
+  }, {
+    "group": "recent",
+    "file": "table_tennis.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-131158.png",
+        "alt": "Table Tennis ball detection with DINOv2 backbone"
+      }
+    ],
+    "videos": [
+      {
+        "label": "Video 1",
+        "url": "https://www.youtube.com/watch?v=K1pVHKcGBag"
+      }, {
+        "label": "Video 2",
+        "url": "https://www.youtube.com/watch?v=pzvVX_MqW2U"
+      }, {
+        "label": "Video 3",
+        "url": "https://www.youtube.com/watch?v=Duz1izHS2QA"
+      }, {
+        "label": "Video 4",
+        "url": "https://www.youtube.com/watch?v=v6YYfRRdcpU"
+      }
+    ]
+  }, {
+    "group": "recent",
+    "file": "uav_grape.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-131243.png",
+        "alt": "Downy mildew infection map generated from UAV images",
+        "caption": "Fig. Infection Map"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file": "opponent.md",
+    "images": [
+      {
+        "src": "assets/img/research/圖片1.png",
+        "alt": "Opponent exploitation framework illustration"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file": "hierarchical_segmentation.md",
+    "images": [
+      {
+        "src": "assets/img/research/圖片2.png",
+        "alt": "Hierarchical image segmentation pipeline"
+      }, {
+        "src": "assets/img/research/圖片3.png",
+        "alt": "Segmentation results at different levels"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file": "foreground_estmation.md",
+    "images": [
+      {
+        "src": "assets/img/research/圖片4.png",
+        "alt": "Hierarchical graph for unsupervised mattin"
+      }, {
+        "src": "assets/img/research/圖片5.png",
+        "alt": "Multi-layer matting examples"
+      }, {
+        "src": "assets/img/research/圖片6.png",
+        "alt": "Unsupervised matting pipeline"
+      }, {
+        "src": "assets/img/research/圖片7.png",
+        "alt": "Foreground estimation results",
+        "caption": "Fig. Foreground Estimation"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"shape_from_focus.md",
+    "images": [
+      {
+        "src": "assets/img/research/圖片8.png",
+        "alt": "Shape-from-focus reconstruction scheme",
+        "caption": "Fig. Proposed Scheme"
+      }, {
+        "src": "assets/img/research/圖片9.png",
+        "alt": "Comparison of reconstructed depth results",
+        "caption": "Fig. Comparison of Reconstructed Results"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"handgesture_recognition.md",
+    "images": [
+      {
+        "src": "assets/img/research/圖片10.png",
+        "alt": "System overview of hand gesture HCI"
+      }, {
+        "src": "assets/img/research/圖片11.png",
+        "alt": "Examples of hand gesture recognition interface"
+      }
+    ],
+    "videos": [
+      {
+        "label": "Video",
+        "url": "https://www.youtube.com/watch?v=LjukWh2wtNA"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"parking_space.md",
+    "images": [
+      {
+        "src": "assets/img/research/圖片12.png",
+        "alt": "Parking lot model and detection framework"
+      }, {
+        "src": "assets/img/research/圖片13.png",
+        "alt": "Vacant parking space detection examples"
+      }
+    ],
+    "videos": [
+      {
+        "label": "Video",
+        "url": "https://www.youtube.com/watch?v=AjgSTyEuabo"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"bspice.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130658.png",
+        "alt": "Examples of Bayesian structure-preserving contrast enhancement"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"multi_target_labeling.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130111.png",
+        "alt": "Multi-camera multi-target labeling and correspondence"
+      }
+    ],
+    "videos": [
+      {
+        "label": "Video 1",
+        "url": "https://www.youtube.com/watch?v=wUic6AHbjRM"
+      }, {
+        "label": "Video 2",
+        "url": "https://www.youtube.com/watch?v=EdJ_QMUKBVE"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"dynamic_calibration.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130028.png",
+        "alt": "Dynamic calibration of multiple cameras"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"multi_ptz_cameras.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130150.png",
+        "alt": "Calibration of multiple PTZ cameras"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"color_diff_evaluation.md",
+    "images": [
+      {
+        "src": "assets/img/research/圖片16.png",
+        "alt": "Color segmentation evaluation examples"
+      }, {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130238.png",
+        "alt": "Intra- and inter-region visual error curves"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"representing_images.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130332.png",
+        "alt": "Verge point representation and reconstruction examples"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"contrast_based_segmentation.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130412.png",
+        "alt": "Contrast-based color image segmentation examples"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"systolic_arch_gf.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130447.png",
+        "alt": "Systolic architectures for GF(2m) multiplication"
+      }
+    ]
+  }, {
+    "group": "previous",
+    "file":"systolic_arch_modular.md",
+    "images": [
+      {
+        "src": "assets/img/research/螢幕擷取畫面-2025-03-20-130531.png",
+        "alt": "Systolic architectures for modular multiplication"
+      }
+    ]
+  }
+]

@@ -29,7 +29,7 @@
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero research-page">
       <div class="container">
         <h1>Research</h1>
         <p>Recent and previous projects in computer vision, AI, and signal processing</p>
@@ -37,97 +37,12 @@
     </section>
 
     <!-- Recent Projects -->
-    <section class="section">
+    <section class="section research-section">
       <div class="container">
         <h2>Recent Projects</h2>
-
-        <!-- Low-shot Image Classification -->
-        <article class="project">
-          <div class="project-text">
-            <h3>Low-shot Image Classification based on Self-supervised Pretrained Model</h3>
-            <p>
-              The core of low-shot learning is how we can train models effectively with limited data.
-              Recent studies have revealed that pre-trained models obtained through self-supervised
-              learning may inherently possess excellent low-shot learning capabilities. In this work,
-              we explore the performance of self-supervised pre-trained models in low-shot image
-              classification tasks using one of the best current self-supervised learning methods,
-              DINOv2.
-            </p>
-            <p>
-              We propose a stable and robust two-step fine-tuning pipeline to address potential
-              issues when fine-tuning the DINOv2 pre-trained model on small datasets. Next, we
-              compare the performance of DINOv2 and supervised pre-trained models in linear probing
-              and fine-tuning evaluations across four diverse datasets with varying data quantities.
-              We conclude that the DINOv2 pre-trained model not only consistently achieves higher
-              classification accuracy but also demonstrates better low-shot performance.
-            </p>
-            <p class="muted">
-              Key topics: self-supervised learning, DINOv2, low-shot image classification.
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="assets/img/research/螢幕擷取畫面-2025-03-20-131114.png"
-                 alt="Low-shot classification with DINOv2" />
-          </div>
-        </article>
-
-        <!-- Table Tennis Ball Detection -->
-        <article class="project">
-          <div class="project-text">
-            <h3>Table Tennis Ball Detection based on Self-supervised Pre-trained Backbone</h3>
-            <p>
-              This work primarily explores how to develop a table tennis ball detector based on a small set
-              of training data. After some detailed studies over two popular models—the CenterNet
-              model based on the CNN structure and the DINO DETR model based on the transformer
-              structure—we propose a new object detection model.
-            </p>
-            <p>
-              The proposed detector replaces the backbone of the CenterNet model with the
-              state-of-the-art self-supervised pretrained model DINOv2, followed by several
-              modifications to further boost the performance in detecting small, fast-moving objects
-              such as table tennis balls.
-            </p>
-            <p><strong>Demo videos:</strong><br />
-              <a href="https://www.youtube.com/watch?v=K1pVHKcGBag" target="_blank" rel="noopener">Video 1</a> •
-              <a href="https://www.youtube.com/watch?v=pzvVX_MqW2U" target="_blank" rel="noopener">Video 2</a> •
-              <a href="https://www.youtube.com/watch?v=Duz1izHS2QA" target="_blank" rel="noopener">Video 3</a> •
-              <a href="https://www.youtube.com/watch?v=v6YYfRRdcpU" target="_blank" rel="noopener">Video 4</a>
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="assets/img/research/螢幕擷取畫面-2025-03-20-131158.png"
-                 alt="Table Tennis ball detection with DINOv2 backbone" />
-          </div>
-        </article>
-
-        <!-- UAV Aerial Image Analysis -->
-        <article class="project">
-          <div class="project-text">
-            <h3>UAV Aerial Image Analysis</h3>
-            <p>
-              In this work, we utilize the self-supervised model DINOv2 to identify whether grape
-              farms are infected with downy mildew from UAV aerial images and compare its analysis
-              accuracy with supervised models. We also evaluate the degradation in classification
-              performance as the number of training images is reduced.
-            </p>
-            <p>
-              To expedite the processing of UAV aerial imagery, we perform automatic 3D projection
-              and image stitching on the raw images to form a large-scale infection map. The entire
-              workflow is further accelerated using multiprocessing, which saves substantial time
-              and cost compared to off-the-shelf software.
-            </p>
-            <p class="muted">
-              Application: agricultural disease monitoring, UAV image processing, DINOv2.
-            </p>
-          </div>
-          <div class="project-media">
-            <figure>
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-131243.png"
-                   alt="Downy mildew infection map generated from UAV images" />
-              <figcaption>Infection Map</figcaption>
-            </figure>
-          </div>
-        </article>
+        <div id="recent-projects" class="project-list">
+          <!-- Fill by JS -->
+        </div>
       </div>
     </section>
 
@@ -135,488 +50,9 @@
     <section class="section">
       <div class="container">
         <h2>Previous Projects</h2>
-          <!-- Opponent Exploitation -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Opponent Exploitation</h3>
-              <p>
-                In a multi-agent competitive environment, it is important for an agent to detect the
-                opponent’s policy and adopt a suitable policy to exploit the opponent. Conventionally,
-                most methods, e.g., Bayesian policy reuse (BPR) variants, assume that the opponent
-                adopts a fixed policy or a randomly changing policy.
-              </p>
-              <p>
-                In this work, we make a more realistic assumption that the opponent may select its
-                policy based on previous observations. We define a “strategy” as the mapping from the
-                previous observation to the opponent’s selected policy, and propose a Bayesian strategy
-                inference (BSI) framework to infer the opponent’s strategy. Furthermore, to deal with
-                opponents who may randomly select their policies, the BSI framework is combined with an
-                intra-episode policy tracking mechanism to construct the Bayesian strategy inference
-                plus policy tracking (BSI-PT) algorithm.
-              </p>
-              <p>
-                Experiments on an Extended Batter versus Pitcher game (EBvPG) show that BSI-PT
-                achieves higher policy prediction accuracy and winning percentage than three other BPR
-                variants against opponents with fixed, random, or partially random policy selection
-                strategies.
-              </p>
-              <p class="muted">
-                Reference: Lee, Kuei-Tso, et al., “Opponent exploitation based on bayesian strategy
-                inference and policy tracking,” <em>IEEE Transactions on Games</em>, Vol.16, No.2, June 2024.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/圖片1.png" alt="Opponent exploitation framework illustration" />
-            </div>
-          </article>
-
-          <!-- Hierarchical Image Segmentation -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Hierarchical Image Segmentation</h3>
-              <p>
-                We propose a new framework for hierarchical image segmentation based on iterative
-                contraction and merging. The hierarchical image segmentation problem is treated as a
-                sequence of optimization problems, each realized by a contraction-and-merging process
-                to identify and merge the most similar data pairs at the current resolution.
-              </p>
-              <p>
-                At the beginning, pixel-based contraction and merging are performed to quickly
-                combine image pixels into initial region elements with visually indistinguishable
-                intra-region color differences. Then, region-based contraction and merging are
-                iteratively applied to group adjacent regions into larger ones and progressively form a
-                segmentation dendrogram for hierarchical segmentation.
-              </p>
-              <p>
-                Compared with state-of-the-art techniques, the proposed algorithm not only produces
-                high-quality segmentation results in a more efficient way, but also preserves a large
-                amount of boundary details.
-              </p>
-              <p class="muted">
-                Reference: Syu, Jia-Hao, Sheng-Jyh Wang, and Li-Chun Wang, “Hierarchical image
-                segmentation based on iterative contraction and merging,” <em>IEEE Transactions on Image
-                Processing</em>, 26(5):2246–2260, 2017.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/圖片2.png" alt="Hierarchical image segmentation pipeline" />
-              <img src="assets/img/research/圖片3.png" alt="Segmentation results at different levels" />
-            </div>
-          </article>
-
-          <!-- Unsupervised Matting and Foreground Estimation -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Unsupervised Matting and Foreground Estimation</h3>
-              <p>
-                This work presents a learning-based hierarchical graph framework for unsupervised
-                matting. The proposed hierarchical structure progressively condenses image data from
-                pixels into cells, from cells into components, and finally from components into
-                matting layers.
-              </p>
-              <p>
-                Unlike conventional approaches that typically address binary foreground/background
-                partitioning, our method provides a set of multi-layer interpretations for unsupervised
-                matting and foreground estimation.
-              </p>
-              <p class="muted">
-                Reference: Chen-Yu Tseng, Sheng-Jyh Wang, “Learning based Hierarchical Graph for
-                Unsupervised Matting and Foreground Estimation,” <em>IEEE Transactions on Image Processing</em>,
-                Vol.23, No.12, pp.4941–4953, December 2014.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/圖片4.png" alt="Hierarchical graph for unsupervised matting" />
-              <img src="assets/img/research/圖片5.png" alt="Multi-layer matting examples" />
-              <img src="assets/img/research/圖片6.png" alt="Unsupervised matting pipeline" />
-              <figure>
-                <img src="assets/img/research/圖片7.png" alt="Foreground estimation results" />
-                <figcaption>Foreground Estimation</figcaption>
-              </figure>
-            </div>
-          </article>
-
-          <!-- Shape-from-Focus Depth Reconstruction -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Shape-from-Focus Depth Reconstruction</h3>
-              <p>
-                Existing shape-from-focus (SFF) techniques, which reconstruct a dense 3D depth map
-                from multi-focus image frames, usually suffer from poor performance over low-contrast
-                regions and require a large number of frames to achieve satisfactory results.
-              </p>
-              <p>
-                To overcome these limitations, we propose a new depth reconstruction process that
-                estimates depth values by solving a MAP estimation problem with a spatial consistency
-                model. A cell-based version of the MAP framework is further proposed to improve
-                computational efficiency.
-              </p>
-              <p>
-                Experimental results demonstrate that the proposed method can achieve impressive
-                performance even with only a few image frames.
-              </p>
-              <p class="muted">
-                Reference: Chen-Yu Tseng, Sheng-Jyh Wang, “Shape-from-Focus Depth Reconstruction with
-                Spatial Consistency Model,” <em>IEEE Transactions on Circuits and Systems for Video
-                Technology</em>, Vol.24, No.12, pp.2063–2076, December 2014.
-              </p>
-            </div>
-            <div class="project-media">
-              <figure>
-                <img src="assets/img/research/圖片8.png" alt="Shape-from-focus reconstruction scheme" />
-                <figcaption>Proposed Scheme</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/img/research/圖片9.png" alt="Comparison of reconstructed depth results" />
-                <figcaption>Comparison of Reconstructed Results</figcaption>
-              </figure>
-            </div>
-          </article>
-
-          <!-- Single-camera Hand Gesture Recognition -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Single-camera Hand Gesture Recognition for Human-computer Interface</h3>
-              <p>
-                We propose a hand gesture recognition technique for a remote-control human–computer
-                interface (HCI) using a single visible-light camera. The system is composed of an image
-                projector and a camera installed on the side of the panel.
-              </p>
-              <p>
-                A simple calibration process is first used to obtain the initial hand position and the
-                mapping between image coordinates and the projected board coordinates. A tracking
-                algorithm, assisted by a hand detection algorithm, is then developed to locate the hand
-                in cluttered backgrounds in real time. A gesture recognition module further interprets
-                the current gesture.
-              </p>
-              <p>
-                By projecting the detected hand position onto the screen, mouse functions can be
-                replaced and hand gestures can be used to control the system.
-              </p>
-              <p class="muted">
-                Reference: Cheng-Ming Chiang, “Single-camera Hand Gesture Recognition for
-                Human-computer Interface”, Master Thesis, NCTU, August 2013.<br />
-                Video: <a href="https://www.youtube.com/watch?v=LjukWh2wtNA" target="_blank" rel="noopener">
-                https://www.youtube.com/watch?v=LjukWh2wtNA</a>
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/圖片10.png" alt="System overview of hand gesture HCI" />
-              <img src="assets/img/research/圖片11.png" alt="Examples of hand gesture recognition interface" />
-            </div>
-          </article>
-
-          <!-- Vacant Parking Space Detection -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Automatic Outdoor Vacant Parking Space Detection</h3>
-              <p>
-                We propose a vacant parking space detection system that operates both day and night.
-                In the daytime, major challenges include dramatic lighting variations, shadow effects,
-                inter-object occlusion, and perspective distortion. At night, insufficient illumination
-                and complex lighting conditions pose additional difficulties.
-              </p>
-              <p>
-                To tackle these problems, we adopt a structural 3D parking lot model consisting of
-                plentiful planar surfaces and propose a plane-based classification process to alleviate
-                the interference of unpredictable lighting changes and shadows. A Bayesian hierarchical
-                framework is then used to integrate the 3D model and plane-based classification for
-                systematic inference of parking status.
-              </p>
-              <p>
-                A pre-processing step is also introduced to enhance nighttime image quality, enabling
-                robust operation across different lighting conditions.
-              </p>
-              <p class="muted">
-                Reference: Ching-Chun Huang, Yu-Shu Tai, and Sheng-Jyh Wang, “Vacant Parking Space
-                Detection Based on Plane-based Bayesian Hierarchical Framework”, <em>IEEE Transactions on
-                Circuits and Systems for Video Technology</em>, Vol.23, No.9, pp.1598–1610, September 2013.<br />
-                Video: <a href="https://www.youtube.com/watch?v=AjgSTyEuabo" target="_blank" rel="noopener">
-                https://www.youtube.com/watch?v=AjgSTyEuabo</a>
-              
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/圖片12.png" alt="Parking lot model and detection framework" />
-              <img src="assets/img/research/圖片13.png" alt="Vacant parking space detection examples" />
-            </div>
-          </article>
-
-          <!-- BSPICE -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Bayesian Structure-Preserving Image Contrast Enhancement (BSPICE)</h3>
-              <p>
-                An efficient Bayesian framework is proposed for image contrast enhancement. Based on
-                the image acquisition pipeline, the enhancement problem is modeled as a MAP estimation
-                problem, where the posterior probability is formulated using local information of the
-                given image.
-              </p>
-              <p>
-                To make the framework practical for typical enhancement tasks such as image editing,
-                the estimation process is converted into an intensity mapping process named Simplified
-                BSPICE, which achieves comparable enhancement performance with much lower computational
-                complexity.
-              </p>
-              <p class="muted">
-                Reference: Tzu-Cheng Jen and Sheng-Jyh Wang, “Bayesian Structure-Preserving Image
-                Contrast Enhancement and Its Simplification”, <em>IEEE Transactions on Circuits and Systems
-                for Video Technology</em>, Vol.22, Issue 6, pp.831–843, June 2012.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130658.png"
-                  alt="Examples of Bayesian structure-preserving contrast enhancement" />
-            </div>
-          </article>
-
-          <!-- Multi-Target Labeling and Correspondence -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Multi-Target Labeling and Correspondence over Multi-Camera Surveillance System</h3>
-              <p>
-                The goal of this work is to locate, label, and correspond multiple targets with ghost
-                suppression over a multi-camera surveillance system. Practical challenges arise from
-                the unknown number of targets, inter-occlusion among targets, and ghost effects caused
-                by geometric ambiguity.
-              </p>
-              <p>
-                Instead of directly corresponding objects among different camera views, the proposed
-                framework adopts a fusion–inference strategy. In the fusion stage, a posterior
-                distribution is formulated to indicate the likelihood of having moving targets at
-                certain ground locations, from which a rough scene model is constructed.
-              </p>
-              <p>
-                In the inference stage, the scene model is input into a Bayesian hierarchical detection
-                framework, where target labeling, correspondence, and ghost removal are treated as a
-                unified optimization problem subject to 3D scene priors, target priors, and foreground
-                detection results. Target priors such as height and width are further refined via an EM
-                mechanism.
-              </p>
-              <p class="muted">
-                Reference: Ching-Chun Huang and Sheng-Jyh Wang, “A Bayesian Hierarchical Framework for
-                Multitarget Labeling and Correspondence with Ghost Suppression over Multicamera
-                Surveillance System”, <em>IEEE Transactions on Automation Science and Engineering</em>, Vol.9,
-                No.1, pp.16–30, January 2012.<br />
-                Videos:
-                <a href="https://www.youtube.com/watch?v=wUic6AHbjRM" target="_blank" rel="noopener">Video 1</a> •
-                <a href="https://www.youtube.com/watch?v=EdJ_QMUKBVE" target="_blank" rel="noopener">Video 2</a>
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130111.png"
-                  alt="Multi-camera multi-target labeling and correspondence" />
-            </div>
-          </article>
-
-          <!-- Dynamic Calibration of Multiple Cameras -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Dynamic Calibration of Multiple Cameras</h3>
-              <p>
-                We propose a new algorithm for dynamic calibration of multiple cameras. Based on the
-                mapping between a horizontal plane in 3D space and the 2D image plane of a panned and
-                tilted camera, the displacement of feature points and the epipolar-plane constraint
-                among multiple cameras are used to infer changes of pan and tilt angles for each
-                camera.
-              </p>
-              <p>
-                The algorithm does not require complicated feature correspondences and can be applied
-                to surveillance systems with wide-range coverage. It also allows the presence of moving
-                objects in the captured scenes while performing dynamic calibration.
-              </p>
-              <p class="muted">
-                Reference: Chen, I-Hsien, and Sheng-Jyh Wang, “An efficient approach for dynamic
-                calibration of multiple cameras,” <em>IEEE Transactions on Automation Science and
-                Engineering</em>, Vol.6, No.1, pp.187–194, 2009.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130028.png"
-                  alt="Dynamic calibration of multiple cameras" />
-            </div>
-          </article>
-
-          <!-- Calibration of Multiple PTZ Cameras -->
-          <article class="project">
-            <div class="project-text">
-              <h3>An Efficient Approach for the Calibration of Multiple PTZ Cameras</h3>
-              <p>
-                An efficient approach is proposed to infer the relative positioning and orientation
-                among multiple pan–tilt–zoom (PTZ) cameras. Tilt angle and altitude of each PTZ camera
-                are first estimated based on observations of simple objects lying on a horizontal
-                plane.
-              </p>
-              <p>
-                With the estimated tilt angles and altitudes, calibration of multiple cameras can be
-                performed by comparing the back-projected world coordinates of common vectors in 3D
-                space. The method does not require particular system setups or specific calibration
-                patterns.
-              </p>
-              <p class="muted">
-                Reference: Chen, I-Hsien, and Sheng-Jyh Wang, “An efficient approach for the calibration
-                of multiple PTZ cameras,” <em>IEEE Transactions on Automation Science and Engineering</em>,
-                Vol.4, No.2, pp.286–293, 2007.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130150.png"
-                  alt="Calibration of multiple PTZ cameras" />
-            </div>
-          </article>
-
-          <!-- Visible Color Difference Evaluation -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Visible Color Difference Based Quantitative Evaluation of Color Segmentation</h3>
-              <p>
-                This work presents the use of visible color difference in a new quantitative evaluation
-                scheme for color segmentation. Two objective visual quantities—the quantity of missing
-                boundaries and the quantity of fake boundaries—are considered to avoid directly
-                evaluating subjective quality.
-              </p>
-              <p>
-                Visual rating experiments are conducted to analyze how missing and fake boundaries
-                affect perceived segmentation quality. To better fit human color perception, a visible
-                color difference measure is defined.
-              </p>
-              <p>
-                Based on these experiments and the visible color difference, two measures—named
-                intra-region visual error and inter-region visual error—are designed to estimate the
-                degrees of missing and fake boundaries, respectively, leading to a complete evaluation
-                scheme for color image segmentation.
-              </p>
-              <p class="muted">
-                Reference: H. C. Chen and S. J. Wang, “Visible Color Difference Based Quantitative
-                Evaluation of Color Segmentation,” <em>IEE Proceedings – Vision, Image, and Signal
-                Processing</em>, Vol.153, Issue 5, pp.598–609, Oct. 2006.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/圖片16.png" alt="Color segmentation evaluation examples" />
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130238.png"
-                  alt="Intra- and inter-region visual error curves" />
-            </div>
-          </article>
-
-          <!-- Representing Images Using Points on Image Surfaces -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Representing Images Using Points on Image Surfaces</h3>
-              <p>
-                This work presents a new approach to represent an image by “verge points,” defined as
-                high-curvature points on the image surface. This representation provides a compact and
-                reversible way to preserve the essence of the original image.
-              </p>
-              <p>
-                Various applications—including compression, edge detection, image enhancement, and
-                image editing—can be realized based on this verge-point representation. Image
-                reconstruction is achieved via iterative linear interpolation from extracted verge
-                points, which are further linked into verge curves for increased compactness.
-              </p>
-              <p>
-                Progressive representation is also developed based on a multiscale extraction scheme,
-                demonstrating the versatility of this representation.
-              </p>
-              <p class="muted">
-                Reference: S. J. Wang, L. C. Kuo, H. H. Jong, and Z. H. Wu, “Representing Images Using
-                Points on Image Surfaces,” <em>IEEE Transactions on Image Processing</em>, Vol.14, No.8,
-                pp.1043–1056, August 2005.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130332.png"
-                  alt="Verge point representation and reconstruction examples" />
-            </div>
-          </article>
-
-          <!-- Contrast-Based Color Image Segmentation -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Contrast-Based Color Image Segmentation</h3>
-              <p>
-                We propose a color image segmentation algorithm based on contrast information instead
-                of conventional derivative-based edge detection. In the CIE L*a*b* color space, color
-                difference is adopted as the measure of color contrast.
-              </p>
-              <p>
-                A subjective experiment shows a weak correlation between perceived color contrast and
-                the absolute levels of (L*, a*, b*), implying that a single-threshold scheme can be
-                used to suppress perceptually faint boundaries.
-              </p>
-              <p>
-                A complete segmentation scheme is developed, and simulation results demonstrate its
-                superiority in providing reasonable and reliable color image segmentation.
-              </p>
-              <p class="muted">
-                Reference: Chen, Hsin-Chia, Wei-Jung Chien, and Sheng-Jyh Wang, “Contrast-based color
-                image segmentation,” <em>IEEE Signal Processing Letters</em>, 11(7):641–644, 2004.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130412.png"
-                  alt="Contrast-based color image segmentation examples" />
-            </div>
-          </article>
-
-          <!-- Two Systolic Architectures for Multiplication in GF(2m) -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Two Systolic Architectures for Multiplication in GF(2<sup>m</sup>)</h3>
-              <p>
-                Two new systolic architectures are presented for multiplication in the finite field
-                GF(2<sup>m</sup>), based on the standard basis representation. In Architecture-I, a new
-                partitioning scheme for the basic cell is used in a straightforward systolic structure
-                to shorten the clock cycle period and speed up operation.
-              </p>
-              <p>
-                In Architecture-II, the one-clock-cycle gap between iterations is eliminated by
-                pairing off the cells of Architecture-I. Comparisons with previously proposed systolic
-                and semisystolic architectures show that Architecture-I offers the highest speed, while
-                Architecture-II achieves the lowest hardware complexity.
-              </p>
-              <p class="muted">
-                Reference: Tsai, W. C., and Sheng-Jyh Wang, “Two systolic architectures for
-                multiplication in GF(2<sup>m</sup>),” <em>IEE Proceedings – Computers and Digital
-                Techniques</em>, 147(6):375–382, 2000.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130447.png"
-                  alt="Systolic architectures for GF(2m) multiplication" />
-            </div>
-          </article>
-
-          <!-- Two Systolic Architectures for Modular Multiplication -->
-          <article class="project">
-            <div class="project-text">
-              <h3>Two Systolic Architectures for Modular Multiplication</h3>
-              <p>
-                This work presents two systolic architectures to accelerate modular multiplication in
-                RSA cryptosystems. In the double-layer architecture, the main operation of Montgomery’s
-                algorithm is partitioned into two parallel operations using precomputation of the
-                quotient bit.
-              </p>
-              <p>
-                In the non-interlaced architecture, the one-clock-cycle gap between iterations is
-                eliminated by pairing off the double-layer architecture. Comparisons with previous
-                Montgomery-based systolic architectures in both modular multiplication and modular
-                exponentiation indicate that the proposed architectures offer higher speed, lower
-                hardware complexity, and lower power consumption.
-              </p>
-              <p class="muted">
-                Reference: Tsai, Wei-Chang, C. Bernard Shung, and Sheng-Jyh Wang, “Two systolic
-                architectures for modular multiplication,” <em>IEEE Transactions on Very Large Scale
-                Integration (VLSI) Systems</em>, 8(1):103–107, 2000.
-              </p>
-            </div>
-            <div class="project-media">
-              <img src="assets/img/research/螢幕擷取畫面-2025-03-20-130531.png"
-                  alt="Systolic architectures for modular multiplication" />
-            </div>
-          </article>
-
-        <!-- </div> -->
+        <div id="previous-projects" class="project-list">
+          <!-- Fill by JS -->
+        </div>
       </div>
     </section>
   </main>
@@ -635,5 +71,82 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadResearchProjects();
+    });
+
+    async function loadResearchProjects() {
+      const recentContainer = document.getElementById('recent-projects');
+      const previousContainer = document.getElementById('previous-projects');
+
+      try {
+        const res = await fetch('data/research/index.json');
+        const projects = await res.json();
+
+        for (const proj of projects) {
+          // Read markdown description
+          const descRes = await fetch(`data/research/${proj.file}`);
+          const descText = await descRes.text();
+          const descHtml = marked.parse(descText);
+
+          // Multiple images
+          let imagesHtml = '';
+          if (proj.images && proj.images.length > 0) {
+            imagesHtml = proj.images
+              .map(img => {
+                const caption = img.caption
+                  ? `<figcaption class="project-caption">${img.caption}</figcaption>`
+                  : '';
+                return `
+                  <figure class="project-figure">
+                    <img src="${img.src}" alt="${img.alt || ''}" />
+                    ${caption}
+                  </figure>
+                `;
+              })
+              .join('');
+          }
+
+          // Video links
+          let videosHtml = '';
+          if (proj.videos && proj.videos.length > 0) {
+            const links = proj.videos
+              .map(v => `<a href="${v.url}" target="_blank" rel="noopener">${v.label}</a>`)
+              .join(' • ');
+            videosHtml = `
+              <p><strong>Demo videos:</strong><br />
+                ${links}
+              </p>
+            `;
+          }
+
+          const article = document.createElement('article');
+          article.className = 'project';
+
+          // Fill article content
+          article.innerHTML = `
+            <div class="project-text">
+              <div class="project-desc">
+                ${descHtml}
+                ${videosHtml}
+              </div>
+            </div>
+            <div class="project-media">
+              ${imagesHtml}
+            </div>
+          `;
+
+          const targetContainer =
+            proj.group === 'previous' ? previousContainer : recentContainer;
+          targetContainer.appendChild(article);
+        }
+      } catch (err) {
+        console.error('Failed to load research projects:', err);
+        recentContainer.innerHTML = '<p>Failed to load research projects.</p>';
+      }
+    }
+  </script>
 </body>
 </html>
