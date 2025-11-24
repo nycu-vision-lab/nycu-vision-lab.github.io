@@ -1,6 +1,6 @@
 # **NYCU IEE Vision Lab**
 
-### **Folder structure**
+## **# Folder structure**
 ```
 nycu-vision-lab.github.io/
 ├─ assets/
@@ -24,7 +24,9 @@ nycu-vision-lab.github.io/
 └─ courses.html         ← Course
 ```
 
-### **Tutorial**
+</br>
+
+## **# Tutorial**
 - **本地修改網頁:**
     1. 先安裝好 VSCode 以及 Github Desktop (並登入 nycu-vision-lab)。
     2. 用 Github Desktop 把 nycu-vision-lab.github.io 的 Repository 給 Clone 下來。
@@ -65,16 +67,49 @@ nycu-vision-lab.github.io/
         ```
 
 - **更新 Research Project:**
-    1. 新增文章 `.md` 檔案到 `data/research/` 資料夾中。
+    1. 新增文章 `.md` 檔案 (就是 Markdown 文字檔) 到 `data/research/` 資料夾中。
     2. 放置圖片到 `assets/img/research/` 資料夾中。
-    3. 更改 `data/research/index.json` 檔案中的資訊，仿照其他篇的格式。
+    3. 仿照其他篇的格式，更改 `data/research/index.json` 檔案中的資訊。
+        ```
+        {
+            "group": "recent",  ← (或者是 "previous")
+            "file": "my_research.md",  ← (放置在 `data/research/` 資料夾中的 `.md` 檔案名稱)
+            "images": [
+              {
+                "src": "assets/img/research/my_research.png",
+                "alt": "This is my research",  ← (這邊填什麼其實不太重要)
+                "caption": "Fig. MY RESEARCH"  ← (如果想加圖片標題的話，沒有標題就不用這項)
+              }
+            ],
+            "videos": [
+              {
+                "label": "Video 1",  ← (想顯示的影片名稱)
+                "url": "https://www.youtube.com/XXX"  ← (影片連結)
+              }, {
+                "label": "Video 2",
+                "url": "https://www.youtube.com/XXX"  ← (第二個影片連結)
+              }
+            ]
+        }
+        ```
 
 - **更新 Others:**
-    - 想要更改更多東西的話，就得靠直接改寫 html 來改動內文了！
-    - 如果是想改模板樣式 (也就是 CSS)，都放在 `assets/css` 裡面！
+    1. 想要更改更多東西的話，就得靠直接改寫 html 來改動內文了！
+    2. 如果是想改模板樣式 (也就是 CSS)，都放在 `assets/css` 裡面！
 
 - **Notice:**
-    - 絕對不要改動 `index.html` 也不要輕易改動 `advisor.html`, `members.html`, ... 的檔案名稱。
-      (會讓網頁連結壞掉)
+    - 絕對不要更動 `index.html`, `advisor.html`, `members.html`, ... 的檔案名稱。</br>
+      (會讓網頁連結壞掉，除非確定所有寫到網頁連結的地方都一併修改好。)
     - 請務必在本地端開假網頁測試過沒問題再 Push 上去。
-    - Have a good day :D
+
+</br>
+
+## **# Contributors**
+- **BSChen**
+    - Create the website
+    - 2025 / 11 ~ Now
+
+</br>
+
+---
+_Have a good day :D  -- BSChen_
