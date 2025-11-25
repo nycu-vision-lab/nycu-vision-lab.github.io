@@ -27,11 +27,12 @@ nycu-vision-lab.github.io/
 </br>
 
 ## **# Tutorial**
+寫給之後要改網頁的人。
 - **本地修改網頁:**
     1. 先安裝好 VSCode 以及 Github Desktop (並登入 nycu-vision-lab)。
     2. 用 Github Desktop 把 nycu-vision-lab.github.io 的 Repository 給 Clone 下來。
     3. 在 VSCode 開啟那個 Clone 下來的資料夾，並使用 Live Server (Go Live) 的功能在本地開啟假網頁。
-    4. 更新好的時候去 Githun Desktop 把它 Push 上去。
+    4. 更新好的時候去 Github Desktop 把它 Push 上去。
     5. _(以上步驟有困難都屬於不熟悉使用 VSCode 或 Github，上網查或問 GPT 絕對能解決！)_
 
 - **更新圖片:**
@@ -112,4 +113,4 @@ nycu-vision-lab.github.io/
 </br>
 
 ---
-_Have a good day :D  -- BSChen_
+_Have a good day :D_
