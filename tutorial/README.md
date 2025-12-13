@@ -105,12 +105,5 @@ nycu-vision-lab.github.io/
 
 </br>
 
-## **# Contributors**
-- **BSChen**
-    - Create the website
-    - 2025 / 11 ~ Now
-
-</br>
-
 ---
 _Have a good day :D_
