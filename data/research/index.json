@@ -1,6 +1,21 @@
 [
   {
     "group": "recent",
+    "file": "fast_cpd_deblur.md",
+    "images": [
+      {
+        "src": "assets/img/research/fast_cpd_deblur_img01.png",
+        "caption": "Fig. Illustration of blur kernel information embedded in the cross partial derivative (CPD) image of a blurred image."
+      }, {
+        "src": "assets/img/research/fast_cpd_deblur_img02.png",
+        "caption": "Fig. Block diagram of the proposed blind deconvolution process."
+      }, {
+        "src": "assets/img/research/fast_cpd_deblur_img03.png",
+        "caption": "Fig. Comparison between blurred images and deblurred results."
+      }
+    ]
+  }, {
+    "group": "recent",
     "file": "lowshot_classification.md",
     "images": [
       {
